@@ -1,0 +1,13 @@
+type Conference {
+  id: ID!
+  name: String!
+  city: String!
+  year: String!
+  attendees: [Attendee] @relation(name: "ConferenceAttendees")
+}
+
+type Attendee {
+  id: ID!
+  name: String!
+  conferences: [Conference] @relation(name: "ConferenceAttendees")
+}
