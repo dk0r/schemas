@@ -1,4 +1,4 @@
 type Todo {
-  description: String!
+  text: String!
   complete: Boolean!
 }
