@@ -1,0 +1,4 @@
+type Todo {
+  description: String!
+  complete: Boolean!
+}
